@@ -4,7 +4,7 @@
   "sideEffects": false,
   "type": "module",
   "scripts": {
-    "build": "panda cssgen && react-router build",
+    "build": "panda cssgen && panda codegen && react-router build",
     "dev": "panda cssgen && react-router dev",
     "lint": "eslint",
     "start": "react-router-serve ./build/server/index.js",
