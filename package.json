@@ -1,0 +1,56 @@
+{
+  "name": "spaceflight-news",
+  "private": true,
+  "sideEffects": false,
+  "type": "module",
+  "scripts": {
+    "build": "panda cssgen && react-router build",
+    "dev": "panda cssgen && react-router dev",
+    "lint": "eslint",
+    "start": "react-router-serve ./build/server/index.js",
+    "start:prod": "NODE_ENV=production react-router-serve ./build/server/index.js",
+    "typecheck": "tsc",
+    "panda": "panda",
+    "panda:codegen": "panda codegen",
+    "test": "vitest",
+    "test:run": "vitest run",
+    "test:coverage": "vitest run --coverage"
+  },
+  "dependencies": {
+    "@radix-ui/react-separator": "^1.1.7",
+    "@radix-ui/react-slot": "^1.2.3",
+    "@react-router/node": "^7.8.0",
+    "@react-router/serve": "^7.8.0",
+    "isbot": "^5.1.0",
+    "react": "^19.1.0",
+    "react-dom": "^19.1.0",
+    "react-router": "^7.8.0"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.33.0",
+    "@pandacss/dev": "^1.0.1",
+    "@react-router/dev": "^7.8.0",
+    "@testing-library/jest-dom": "^6.6.4",
+    "@testing-library/react": "^16.3.0",
+    "@testing-library/user-event": "^14.6.1",
+    "@types/react": "^19.1.0",
+    "@types/react-dom": "^19.1.0",
+    "@typescript-eslint/eslint-plugin": "^8.39.0",
+    "@typescript-eslint/parser": "^8.39.0",
+    "eslint": "^9.33.0",
+    "eslint-import-resolver-typescript": "^4.4.0",
+    "eslint-plugin-import": "^2.28.1",
+    "eslint-plugin-jsx-a11y": "^6.7.1",
+    "eslint-plugin-react": "^7.33.2",
+    "eslint-plugin-react-hooks": "^5.2.0",
+    "globals": "^16.3.0",
+    "jsdom": "^26.1.0",
+    "typescript": "^5.1.6",
+    "vite": "^7.1.0",
+    "vite-tsconfig-paths": "^5.1.0",
+    "vitest": "^3.2.4"
+  },
+  "engines": {
+    "node": ">=20.0.0"
+  }
+}
